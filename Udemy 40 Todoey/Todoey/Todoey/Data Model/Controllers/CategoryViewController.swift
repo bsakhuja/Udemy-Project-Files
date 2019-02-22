@@ -9,7 +9,9 @@
 import UIKit
 import RealmSwift
 
-class CategoryViewController: UITableViewController {
+class CategoryViewController: SwipeTableViewController {
+
+    
     
     let realm = try! Realm()
     var categories: Results<Category>?
@@ -24,7 +26,7 @@ class CategoryViewController: UITableViewController {
     
     // MARK: - TableView DataSource Methods
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
 
         cell.textLabel?.text = categories?[indexPath.row].name ?? "No categories added yet"
         
@@ -33,8 +35,6 @@ class CategoryViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories?.count ?? 1
-        
-        // if nil, return 1. else return the count
     }
     
     // MARK: - TableView Delegate Methods
@@ -54,7 +54,6 @@ class CategoryViewController: UITableViewController {
             
         }
     }
-    
     
     // MARK: - Data Manipulation Methods
     
@@ -89,13 +88,14 @@ class CategoryViewController: UITableViewController {
         
     }
     
+    // MARK: - Realm CRUD Methods
     func save(category: Category) {
         do {
             try realm.write {
                 realm.add(category)
             }
         } catch {
-            print("error saving context: \(error)")
+            print("error saving in realm: \(error)")
         }
     }
     
@@ -103,9 +103,18 @@ class CategoryViewController: UITableViewController {
         categories = realm.objects(Category.self)
         tableView.reloadData()
     }
+    
+    override func updateModel(at indexPath: IndexPath) {
+        do {
+            try self.realm.write {
+                if let category = self.categories?[indexPath.row] {
+                    self.realm.delete(category)
+                }
+                
+            }
+        } catch {
+            print("error deleting cell: \(error)")
+        }
 
-    
-    
-    
-
+    }
 }
