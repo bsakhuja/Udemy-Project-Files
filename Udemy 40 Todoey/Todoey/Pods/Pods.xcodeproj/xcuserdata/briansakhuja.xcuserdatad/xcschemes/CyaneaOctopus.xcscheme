@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6902F03CCB5450F2E6EAA0208A69899A"
-               BlueprintName = "Pods-Todoey"
+               BlueprintIdentifier = "A066A7DE54F384A5B9CBEE8FD1ACECBF"
+               BlueprintName = "CyaneaOctopus"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-Todoey.framework">
+               BuildableName = "CyaneaOctopus.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

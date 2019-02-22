@@ -1,4 +1,5 @@
 PODS:
+  - CyaneaOctopus (0.3.1)
   - Realm (3.13.1):
     - Realm/Headers (= 3.13.1)
   - Realm/Headers (3.13.1)
@@ -7,20 +8,23 @@ PODS:
   - SwipeCellKit (2.5.1)
 
 DEPENDENCIES:
+  - CyaneaOctopus
   - RealmSwift
   - SwipeCellKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CyaneaOctopus
     - Realm
     - RealmSwift
     - SwipeCellKit
 
 SPEC CHECKSUMS:
+  CyaneaOctopus: 6f683b8cee6c372419993a0e7de240c599edef1c
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
   SwipeCellKit: 30fd6a4f8a8b8ac864ea389c8b4c8bac5ba5471a
 
-PODFILE CHECKSUM: 6aa7bdd4db2cc7e866a6966b60d0e6052d9a3286
+PODFILE CHECKSUM: 8859b811f1c6a910b18ae64d46e9522be5c48819
 
 COCOAPODS: 1.6.0
