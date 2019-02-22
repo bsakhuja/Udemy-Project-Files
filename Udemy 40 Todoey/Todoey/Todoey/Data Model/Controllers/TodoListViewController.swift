@@ -103,6 +103,7 @@ class TodoListViewController: UITableViewController {
 // MARK: - UISearchBar delegate methods
 extension TodoListViewController: UISearchBarDelegate {
     
+    // User clicks the search button
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         
@@ -112,4 +113,19 @@ extension TodoListViewController: UISearchBarDelegate {
         
         loadItems(with: request)
     }
+    
+    // User clears the search text field
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadItems()
+            
+            // Dismiss keyboard on main thread
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+            
+        }
+    }
+    
+    
 }
