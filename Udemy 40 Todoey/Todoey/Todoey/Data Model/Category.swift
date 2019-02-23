@@ -14,5 +14,6 @@ class Category: Object {
     // essentially '@objc dynamic' allows realm to monitor for changes to update the database
     @objc dynamic var name: String = ""
     var items = List<Item>()
+    @objc dynamic var color: String = ""
     
 }

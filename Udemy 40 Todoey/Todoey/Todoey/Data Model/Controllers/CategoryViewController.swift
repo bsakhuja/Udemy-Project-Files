@@ -18,7 +18,6 @@ class CategoryViewController: SwipeTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loadCategories()
     }
     
@@ -27,6 +26,11 @@ class CategoryViewController: SwipeTableViewController {
     // MARK: - TableView DataSource Methods
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        if let color = categories?[indexPath.row].color {
+            cell.backgroundColor = UIColor(hexString: color)
+            cell.textLabel?.textColor = UIColor.contrastingBlackOrWhiteColorOn(UIColor(hexString: color), isFlat: true, alpha: 1)
+        }
+        
 
         cell.textLabel?.text = categories?[indexPath.row].name ?? "No categories added yet"
         
@@ -70,6 +74,7 @@ class CategoryViewController: SwipeTableViewController {
             if let newCategoryString = textField.text {
                 let newCategory = Category()
                 newCategory.name = newCategoryString
+                newCategory.color = UIColor.randomFlatColor()?.hexString ?? "1D98F6"
                 
                 self.save(category: newCategory)
                 
@@ -118,3 +123,4 @@ class CategoryViewController: SwipeTableViewController {
 
     }
 }
+
