@@ -43,8 +43,12 @@ This repo contains projects I've done while doing courses on Udemy.com.
 34. Intermediate Swift
 35. Clima
 36. Passing Data Between VCs
+* Technologies/Frameworks: Delegates
 37. Bitcoin Price Tracker
-38. Flash  Chat
+38. Flash Chat
+* Technologies/Frameworks: Firebase
 39. Closures
 40. Todoey
+* Technologies/Frameworks: UserDefaults, CoreData, Realm
 41. InspoQuotes
+* Technologies/Frameworks: StoreKit
