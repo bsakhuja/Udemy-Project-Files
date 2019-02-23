@@ -35,39 +35,53 @@ This repo contains projects I've done while doing courses on Udemy.com.
 25. I Am Rich
 26. Dicee
 27. Magic 8 Ball
+
    Shake gesture
+   
 28. Beginner Swift
+
    Data types, constants, variables, functions, conditional statements, loops
+   
 29. Xylophone
+
    AVFoundation
+   
 30. Quiz
 31. Destini
 32. Auto Constraints
 33. Auto Layout Stack Views
 34. Intermediate Swift
+
    Classes, objects, enums, functions, optionals
    
 35. Clima
+
    CocoaPods, CoreLocation, REST, APIs
    
 36. Passing Data Between VCs
+
    Delegates
    
 37. Bitcoin Price Tracker
+
    CocoaPods, REST,  APIs
    
 38. Flash Chat
+
    Firebase, UI Animations
    
 39. Closures
 40. Todoey
+
    UserDefaults, CoreData, Realm
    
 41. InspoQuotes
    StoreKit
    
 42. Advanced Swift Part 1
+
    Getters & setters, computed properties, observed properties
    
 43. Advanced Swift Part 2
+
    Swift access levels, Structs, tuples, guard let vs. if let,
