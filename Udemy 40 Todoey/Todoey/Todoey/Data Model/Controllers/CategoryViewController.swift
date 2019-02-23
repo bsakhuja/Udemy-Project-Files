@@ -29,6 +29,7 @@ class CategoryViewController: SwipeTableViewController {
         if let color = categories?[indexPath.row].color {
             cell.backgroundColor = UIColor(hexString: color)
             cell.textLabel?.textColor = UIColor.contrastingBlackOrWhiteColorOn(UIColor(hexString: color), isFlat: true, alpha: 1)
+            
         }
         
 
@@ -53,7 +54,6 @@ class CategoryViewController: SwipeTableViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             if let category = categories?[indexPath.row] {
                 destinationVC.selectedCategory = category
-                destinationVC.navigationItem.title = category.name
             }
             
         }
