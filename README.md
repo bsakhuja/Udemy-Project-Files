@@ -74,4 +74,4 @@ This repo contains projects I've done while doing courses on Udemy.com.
   - Getters & setters, computed properties, observed properties
    
 43. Advanced Swift Part 2
-  - Swift access levels, Structs, tuples, guard let vs. if let,
+  - Structs, structs vs. classes, internal/external parameters, tuples, guard let vs. if let, access levels
