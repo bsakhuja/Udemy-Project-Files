@@ -75,3 +75,12 @@ This repo contains projects I've done while doing courses on Udemy.com.
    
 43. Advanced Swift Part 2
   - Structs, structs vs. classes, internal/external parameters, tuples, guard let vs. if let, access levels
+  
+44. Swift Access Levels
+  - private, fileprivate, internal (default), public, open
+  
+45. Structs vs. Classes
+  - Nuances and differences between structs and classes
+  
+46. See Food
+  - CoreML
