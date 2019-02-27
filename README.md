@@ -84,3 +84,4 @@ This repo contains projects I've done while doing courses on Udemy.com.
   
 46. SeeFood
   - CoreML
+  > Important note: you will need to download and add Inceptionv3.mlmodel to your project.  Download from [here](https://developer.apple.com/machine-learning/build-run-models/)
