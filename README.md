@@ -82,5 +82,5 @@ This repo contains projects I've done while doing courses on Udemy.com.
 45. Structs vs. Classes
   - Nuances and differences between structs and classes
   
-46. See Food
+46. SeeFood
   - CoreML
