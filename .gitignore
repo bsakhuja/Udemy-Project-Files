@@ -1,2 +1,4 @@
 **/.mlmodel
 **/.caffemodel
+*.mlmodel
+*.caffemodel
