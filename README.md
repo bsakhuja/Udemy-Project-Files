@@ -83,8 +83,8 @@ This repo contains projects I've done while doing courses on Udemy.com.
   - Nuances and differences between structs and classes
   
 46. SeeFood
-  - CoreML
+  - CoreML, UIImagePickerController
   > Important note: you will need to download and add Inceptionv3.mlmodel to your project.  Download from [here](https://developer.apple.com/machine-learning/build-run-models/)
   
-47. SeeFood IBM Watson
-- IBM Cloud, Watson, Bluemix, Carthage
+47. WhatFlower
+  - Converting Caffe model into CoreML, Alamofire, REST, SwiftyJSON, SDWebImage
