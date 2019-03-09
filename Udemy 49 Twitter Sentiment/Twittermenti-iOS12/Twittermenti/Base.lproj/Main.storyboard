@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gJu-1w-wsk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gJu-1w-wsk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="5eC-3A-3fI">
             <objects>
-                <viewController id="gJu-1w-wsk" customClass="ViewController" customModule="TwitterSen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gJu-1w-wsk" customClass="ViewController" customModule="Twittermenti" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a7b-3t-cqJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,18 +20,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwa-r8-Fd9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-Nf-Ipl">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-Nf-Ipl">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="567"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-2h-KsB">
-                                                <rect key="frame" x="133.5" y="0.0" width="108" height="457"/>
-                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do people feel about..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HP9-ee-vOF">
-                                                <rect key="frame" x="0.0" y="512" width="375" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6wm-BH-uBw"/>
                                                 </constraints>
@@ -40,10 +33,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rge-zl-NGZ">
-                                                <rect key="frame" x="138" y="617" width="99" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="lv1-5K-4W0"/>
-                                                </constraints>
+                                                <rect key="frame" x="138" y="225" width="99" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Predict!">
                                                     <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,6 +42,13 @@
                                                     <action selector="predictPressed:" destination="gJu-1w-wsk" eventType="touchUpInside" id="uRJ-Qv-1Rf"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-2h-KsB">
+                                                <rect key="frame" x="133.5" y="447.5" width="108" height="119.5"/>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="HP9-ee-vOF" secondAttribute="trailing" id="3pU-j7-3tl"/>
@@ -61,8 +58,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="MLc-Nf-Ipl" firstAttribute="top" secondItem="jwa-r8-Fd9" secondAttribute="top" id="0zn-oV-LK2"/>
-                                    <constraint firstAttribute="bottom" secondItem="MLc-Nf-Ipl" secondAttribute="bottom" id="L9S-7h-rMr"/>
+                                    <constraint firstItem="MLc-Nf-Ipl" firstAttribute="top" secondItem="jwa-r8-Fd9" secondAttribute="top" constant="50" id="0zn-oV-LK2"/>
+                                    <constraint firstAttribute="bottom" secondItem="MLc-Nf-Ipl" secondAttribute="bottom" constant="50" id="L9S-7h-rMr"/>
                                     <constraint firstItem="MLc-Nf-Ipl" firstAttribute="leading" secondItem="jwa-r8-Fd9" secondAttribute="leading" id="P1B-65-SvE"/>
                                     <constraint firstAttribute="trailing" secondItem="MLc-Nf-Ipl" secondAttribute="trailing" id="nXs-gW-13G"/>
                                 </constraints>
@@ -72,7 +69,7 @@
                         <constraints>
                             <constraint firstItem="jwa-r8-Fd9" firstAttribute="leading" secondItem="Cel-SL-yWb" secondAttribute="leading" id="Xh1-ph-0nL"/>
                             <constraint firstItem="jwa-r8-Fd9" firstAttribute="trailing" secondItem="Cel-SL-yWb" secondAttribute="trailing" id="a1L-0a-HgM"/>
-                            <constraint firstItem="jwa-r8-Fd9" firstAttribute="bottom" secondItem="Cel-SL-yWb" secondAttribute="bottom" id="htS-27-SyT"/>
+                            <constraint firstItem="jwa-r8-Fd9" firstAttribute="bottom" secondItem="a7b-3t-cqJ" secondAttribute="bottom" id="htS-27-SyT"/>
                             <constraint firstItem="jwa-r8-Fd9" firstAttribute="top" secondItem="a7b-3t-cqJ" secondAttribute="top" id="iZh-hN-vbU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cel-SL-yWb"/>
