@@ -2,3 +2,5 @@
 **/.caffemodel
 *.mlmodel
 *.caffemodel
+APIConstants.swift
+Secrets.plist
