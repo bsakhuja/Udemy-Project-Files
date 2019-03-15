@@ -156,7 +156,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Rotate plane from vertical to horizontal. (Angle is in radians (90) counterclockwise.  But we want clockwise, so we have - pi/2 (-90). Only rotate about the x axis (1,0,0).
         planeNode.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)
         
-        // Update the grid material to the grid.png
+        // Update the grid material to the grcid.png
         let gridMaterial = SCNMaterial()
         gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
         plane.materials = [gridMaterial]
