@@ -88,3 +88,22 @@ This repo contains projects I've done while doing courses on Udemy.com.
   
 47. WhatFlower
   - Converting Caffe model into CoreML, Alamofire, REST, SwiftyJSON, SDWebImage
+
+48. CreateML From Images
+  - CoreML, creating .mlmodel from image sets
+  
+49. Twitter Sentiment
+  - CoreML Twitter API, creating .mlmodel from .csv, 
+  
+50. ARDicee
+  - ARKit, displaying 3d planes, spheres, cubes
+  
+51. ARRuler
+  - ARKit, displaying 3d text
+  
+52. Poke3D
+  - ARKit, adding 3d models from .obj, detecting images
+  
+53. Magic Paper
+  - ARKit, SceneKit to display video in AR, detecting images
+  
